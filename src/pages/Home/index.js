@@ -24,7 +24,7 @@ const Home = createWithRemoteLoader({
       transformMenuData={data => {
         return data.map(item => {
           return Object.assign({}, item, { path: '/' + item.path.split('/').slice(2).join('/') });
-        });
+        }).sort((a, b) => b.index - a.index);
       }}
       name="product-doc"
       contentClassName="md-content"
