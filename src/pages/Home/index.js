@@ -9,7 +9,7 @@ const Home = createWithRemoteLoader({
   return (
     <MarkdownPage
       url="https://leapin-ai.github.io/product-doc"
-      params={{ lang: currentLang }}
+      params={{ lang: currentLang, timestamp: Date.now() }}
       transformResponse={response => {
         return {
           data: {
