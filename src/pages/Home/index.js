@@ -8,7 +8,7 @@ const Home = createWithRemoteLoader({
 
   return (
     <MarkdownPage
-      url="https://linzhipeng123.github.io/product-doc"
+      url="https://leapin-ai.github.io/product-doc"
       params={{ lang: currentLang }}
       transformResponse={response => {
         return {
@@ -29,7 +29,7 @@ const Home = createWithRemoteLoader({
       name="product-doc"
       contentClassName="md-content"
       baseUrl={'/document'}
-      assetsPath={'https://linzhipeng123.github.io/product-doc/assets'}
+      assetsPath={'https://leapin-ai.github.io/product-doc/assets'}
     />
   );
 });
