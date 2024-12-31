@@ -7,7 +7,7 @@ const Home = createWithRemoteLoader({
   const { global: currentLang } = useGlobalContext('lang');
 
   return (
-    <MarkdownPage
+    <MarkdownPage menuWidth="300px"
       url="https://leapin-ai.github.io/product-doc"
       params={{ lang: currentLang, timestamp: Date.now() }}
       transformResponse={response => {
