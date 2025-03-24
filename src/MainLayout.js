@@ -33,7 +33,7 @@ const MainLayout = createWithRemoteLoader({
     <Global {...props} preset={preset}>
       <Layout
         navigation={{
-          defaultTitle: '产品文档',
+          defaultTitle: 'Product documentation',
           showIndex: false,
           headerLogo: { src: window.PUBLIC_URL + '/logo.png' },
           list: paths,
